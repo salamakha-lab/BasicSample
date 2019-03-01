@@ -74,8 +74,7 @@ class ProductFragment : Fragment() {
     private fun subscribeToModel(model: ProductViewModel) {
 
         // Observe product data
-        model.observableProduct.observe(this, Observer<Any> { productEntity -> model.setProduct(productEntity as ProductEntity)}) // .setProduct(productEntity) })
-
+        model.observableProduct.observe(this, Observer<ProductEntity> { productEntity -> model.setProduct(productEntity)})
         // Observe comments
         model.comments.observe(this, Observer<List<Comment>> {
             if (it != null) {
