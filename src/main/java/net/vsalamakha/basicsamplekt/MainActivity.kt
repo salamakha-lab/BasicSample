@@ -29,10 +29,12 @@ class MainActivity : AppCompatActivity() {
 
         // Add product list fragment if this is first creation
         if (savedInstanceState == null) {
-            val fragment = ProductListFragment()
+            //val fragment = ProductListFragment()
 
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, fragment,
+                .add(
+                    R.id.fragment_container,
+                    ProductListFragment(),//fragment,
                     ProductListFragment.TAG
                 ).commit()
         }
