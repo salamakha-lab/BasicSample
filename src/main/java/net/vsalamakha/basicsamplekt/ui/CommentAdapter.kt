@@ -84,5 +84,5 @@ class CommentAdapter(private val mCommentClickCallback: CommentClickCallback?) :
         return if (mCommentList == null) 0 else mCommentList!!.size
     }
 
-    /*internal*/ class CommentViewHolder(val binding: CommentItemBinding) : RecyclerView.ViewHolder(binding.root)
+    class CommentViewHolder(val binding: CommentItemBinding) : RecyclerView.ViewHolder(binding.root)
 }
