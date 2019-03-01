@@ -127,7 +127,6 @@ abstract class AppDatabase : RoomDatabase() {
                 Thread.sleep(4000)
             } catch (ignored: InterruptedException) {
             }
-
         }
 
         private val MIGRATION_1_2 = object : Migration(1, 2) {
