@@ -10,8 +10,8 @@ import net.vsalamakha.basicsamplekt.db.entity.ProductEntity
  * Repository handling the work with products and comments.
  */
 class DataRepository private constructor(private val mDatabase: AppDatabase) {
-    private val mObservableProducts: MediatorLiveData<List<ProductEntity>> = MediatorLiveData()
 
+    private val mObservableProducts: MediatorLiveData<List<ProductEntity>> = MediatorLiveData()
     /**
      * Get the list of products from the database and get notified when the data changes.
      */
